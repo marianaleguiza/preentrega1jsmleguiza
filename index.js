@@ -16,10 +16,10 @@ function calcular(sumaPrecios, cantidadCuotas) {
         sumaPrecios += precio;
     
         deseaContinuar = prompt('¿Desea agregar otro producto? (SI/NO):').toUpperCase();
-        console.log('El precio en cuotas será de: $' + subtotal + ' cada cuota');
+        alert('El precio en cuotas será de: $' + subtotal + ' cada cuota');
     } while (deseaContinuar === 'SI');
     
-    console.log('La suma total de los precios es: $' + sumaPrecios);
+    alert('La suma total de los precios es: $' + sumaPrecios);
 }
 
 calcular(sumaPrecios, cantidadCuotas);
